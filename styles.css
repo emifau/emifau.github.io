@@ -116,7 +116,6 @@ ul {
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--container-padding);
-    overflow-x: hidden;
 }
 
 /* ==================== Section Styles ==================== */
@@ -610,7 +609,7 @@ ul {
     }
 
     .hero-thumbs {
-        bottom: 4.5rem;
+        bottom: 5.5rem;
         left: 50%;
         right: auto;
         transform: translateX(-50%);
@@ -620,8 +619,8 @@ ul {
     }
 
     .thumb {
-        width: 50px;
-        height: 35px;
+        width: 45px;
+        height: 32px;
         flex-shrink: 0;
     }
 
@@ -631,9 +630,9 @@ ul {
 
     .hero-scroll {
         display: flex;
-        bottom: 1rem;
-        font-size: 0.6rem;
-        gap: 0.3rem;
+        bottom: 1.5rem;
+        font-size: 0.55rem;
+        gap: 0.25rem;
     }
 
     .image-caption {
