@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="PhotoFau - Fotografia profesional y cursos de fotografia. Capturo momentos autenticos y creo imagenes que venden.">
+    <meta property="og:title" content="PhotoFau | Fotografia Profesional">
+    <meta property="og:description"
+        content="Fotografia de bodas, retratos y marcas. Reserva tu fecha y recibe direccion creativa completa.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop">
+    <title>PhotoFau | Fotografia Profesional</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation - Minimal & Transparent -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">PhotoFau</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#courses" class="nav-link">Cursos</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mi</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero - Photo Grid Focus -->
+    <section id="home" class="hero-portfolio">
+        <!-- Main Featured Photo -->
+        <div class="hero-main">
+            <div class="hero-image active" data-index="0">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop"
+                    alt="Fotografia de bodas" loading="eager" decoding="async" fetchpriority="high">
+                <div class="image-caption">
+                    <span class="caption-category">Bodas</span>
+                    <h2 class="caption-title">Amor Eterno</h2>
+                </div>
+            </div>
+            <div class="hero-image" data-index="1">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&h=1080&fit=crop"
+                    alt="Retrato artistico">
+                <div class="image-caption">
+                    <span class="caption-category">Retratos</span>
+                    <h2 class="caption-title">Luz Interior</h2>
+                </div>
+            </div>
+            <div class="hero-image" data-index="2">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop"
+                    alt="Paisaje natural">
+                <div class="image-caption">
+                    <span class="caption-category">Naturaleza</span>
+                    <h2 class="caption-title">Amanecer Alpino</h2>
+                </div>
+            </div>
+            <div class="hero-image" data-index="3">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&h=1080&fit=crop"
+                    alt="Evento">
+                <div class="image-caption">
+                    <span class="caption-category">Eventos</span>
+                    <h2 class="caption-title">Momentos Unicos</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="hero-thumbs">
+            <button class="thumb active" data-index="0">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=200&h=150&fit=crop"
+                    alt="Bodas">
+                <span class="thumb-label">Bodas</span>
+            </button>
+            <button class="thumb" data-index="1">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=150&fit=crop"
+                    alt="Retratos">
+                <span class="thumb-label">Retratos</span>
+            </button>
+            <button class="thumb" data-index="2">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=150&fit=crop"
+                    alt="Naturaleza">
+                <span class="thumb-label">Naturaleza</span>
+            </button>
+            <button class="thumb" data-index="3">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=200&h=150&fit=crop"
+                    alt="Eventos">
+                <span class="thumb-label">Eventos</span>
+            </button>
+        </div>
+
+        <!-- Brand Overlay - Full Width -->
+        <div class="hero-brand hero-brand--visible">
+            <h1 class="brand-name">PhotoFau</h1>
+            <p class="brand-tagline">Fotografía Profesional</p>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll">
+            <span>Ver mas trabajos</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Compact -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+                        alt="Faustino">
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Sobre Mí</span>
+                    <h2 class="section-title">Faustino Reyes</h2>
+                    <p class="about-intro">Fotógrafo profesional con más de 12 años capturando momentos únicos.</p>
+                    <p>Mi pasión es congelar instantes en el tiempo y enseñar a otros el arte de ver el mundo a través
+                        de un lente. He documentado más de 500 proyectos y formado a más de 1,200 estudiantes.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-value">12+</span>
+                            <span class="stat-label">Años</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">500+</span>
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">1.2K</span>
+                            <span class="stat-label">Estudiantes</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">Reservar Sesión</a>
+                        <a href="#portfolio" class="btn btn-ghost btn-ghost--dark">Ver Trabajos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Servicios</span>
+                <h2 class="section-title">Experiencias fotograficas hechas a medida</h2>
+                <p class="section-desc">Paquetes claros, tiempos definidos y resultados con impacto comercial.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Fotografia de bodas</h3>
+                    <p>Historia completa del dia, enfoque editorial y emociones autenticas.</p>
+                    <ul>
+                        <li>Preboda opcional</li>
+                        <li>Edicion premium</li>
+                        <li>Entrega digital y album</li>
+                    </ul>
+                </article>
+                <article class="service-card featured">
+                    <h3>Retratos para marcas personales</h3>
+                    <p>Sesiones guiadas para crear imagenes que posicionan y generan confianza.</p>
+                    <ul>
+                        <li>Asesoria de estilo</li>
+                        <li>Direccion de poses</li>
+                        <li>Entrega en 72 horas</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h3>Eventos y empresas</h3>
+                    <p>Cobertura dinamica con enfoque en experiencia, producto y publico.</p>
+                    <ul>
+                        <li>Plan de tomas previo</li>
+                        <li>Backup en sitio</li>
+                        <li>Galeria privada</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Portafolio</h2>
+                    <p class="section-desc">Seleccion de trabajos reales y entregas finales a clientes.</p>
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="wedding">Bodas</button>
+                    <button class="filter-btn" data-filter="portrait">Retratos</button>
+                    <button class="filter-btn" data-filter="nature">Naturaleza</button>
+                    <button class="filter-btn" data-filter="event">Eventos</button>
+                </div>
+            </div>
+
+            <div class="portfolio-masonry">
+                <div class="portfolio-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=1000&fit=crop"
+                        alt="Boda elegante" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Bodas</span>
+                        <h3 class="item-title">Amor en la Toscana</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=900&fit=crop"
+                        alt="Retrato artistico" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Retratos</span>
+                        <h3 class="item-title">Luz y Sombra</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+                        alt="Paisaje montanoso" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Naturaleza</span>
+                        <h3 class="item-title">Amanecer Alpino</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="event">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop"
+                        alt="Evento" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Eventos</span>
+                        <h3 class="item-title">Noche de Gala</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop"
+                        alt="Boda romantica" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Bodas</span>
+                        <h3 class="item-title">Votos de Amor</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop"
+                        alt="Retrato editorial" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Retratos</span>
+                        <h3 class="item-title">Editorial Fashion</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop"
+                        alt="Naturaleza" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Naturaleza</span>
+                        <h3 class="item-title">Bosque Mistico</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="event">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop"
+                        alt="Conferencia" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Eventos</span>
+                        <h3 class="item-title">Conferencia Tech</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop"
+                        alt="Retrato masculino" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Retratos</span>
+                        <h3 class="item-title">Caracter</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&h=600&fit=crop"
+                        alt="Detalles boda" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Bodas</span>
+                        <h3 class="item-title">Detalles Preciosos</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop"
+                        alt="Montanas" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Naturaleza</span>
+                        <h3 class="item-title">Cumbres</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="event">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop"
+                        alt="Fiesta" loading="lazy">
+                    <div class="item-overlay">
+                        <span class="item-category">Eventos</span>
+                        <h3 class="item-title">Celebracion</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Aprende Fotografia</span>
+                <h2 class="section-title">Cursos & Talleres</h2>
+                <p class="section-desc">Lleva tus habilidades fotograficas al siguiente nivel</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card featured">
+                    <div class="course-badge">Mas Popular</div>
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop"
+                            alt="Masterclass">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <span>12 horas</span>
+                            <span>Intermedio</span>
+                        </div>
+                        <h3 class="course-title">Masterclass de Retratos</h3>
+                        <p class="course-desc">Domina la iluminacion, composicion y direccion de modelos.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-current">$149.000</span>
+                                <span class="price-original">$249.000</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Inscribirse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&h=400&fit=crop"
+                            alt="Fundamentos">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <span>6 horas</span>
+                            <span>Principiante</span>
+                        </div>
+                        <h3 class="course-title">Fundamentos de Fotografia</h3>
+                        <p class="course-desc">Aprende exposicion, composicion y uso de tu camara.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-current">$79.000</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Inscribirse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&h=400&fit=crop"
+                            alt="Lightroom">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <span>8 horas</span>
+                            <span>Intermedio</span>
+                        </div>
+                        <h3 class="course-title">Edicion en Lightroom</h3>
+                        <p class="course-desc">Transforma tus fotos con tecnicas de edicion profesional.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-current">$99.000</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Inscribirse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=400&fit=crop"
+                            alt="Bodas">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-meta">
+                            <span>15 horas</span>
+                            <span>Avanzado</span>
+                        </div>
+                        <h3 class="course-title">Fotografia de Bodas Pro</h3>
+                        <p class="course-desc">Inicia tu carrera como fotografo de bodas profesional.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-current">$199.000</span>
+                                <span class="price-original">$299.000</span>
+                            </div>
+                            <a href="#contact" class="btn btn-small">Inscribirse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Clientes que volvieron y recomendaron</h2>
+                <p class="section-desc">Historias reales que reflejan confianza, resultados y experiencia.</p>
+            </div>
+            <div class="testimonials-grid">
+                <figure class="testimonial-card">
+                    <blockquote>"Nos guio en todo momento y el resultado fue elegante y emocionante."</blockquote>
+                    <figcaption>
+                        <span class="testimonial-name">Camila & Diego</span>
+                        <span class="testimonial-role">Boda en Vina del Mar</span>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial-card featured">
+                    <blockquote>"Las fotos de marca elevaron nuestra percepcion y vendimos mas desde el primer mes."
+                    </blockquote>
+                    <figcaption>
+                        <span class="testimonial-name">Alicia Perez</span>
+                        <span class="testimonial-role">Marca personal</span>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial-card">
+                    <blockquote>"Entrega rapida, comunicacion clara y una mirada artistica impecable."</blockquote>
+                    <figcaption>
+                        <span class="testimonial-name">Carlos Mora</span>
+                        <span class="testimonial-role">Evento corporativo</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="testimonials-cta">
+                <a href="#contact" class="btn btn-primary">Agendar llamada de 15 minutos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contacto</span>
+                    <h2 class="section-title">Trabajemos Juntos</h2>
+                    <p class="contact-desc">Tienes un proyecto en mente o quieres inscribirte en un curso? Escribeme.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:hola@photofau.com" class="contact-method">
+                            <span class="method-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M4 6h16v12H4z" />
+                                    <path d="M4 6l8 6 8-6" />
+                                </svg>
+                            </span>
+                            <span>hola@photofau.com</span>
+                        </a>
+                        <a href="tel:+56912345678" class="contact-method">
+                            <span class="method-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path
+                                        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.9 19.9 0 0 1-8.7-3.1 19.5 19.5 0 0 1-6-6A19.9 19.9 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7 2 2 0 0 1 1.7 2.1z" />
+                                </svg>
+                            </span>
+                            <span>+56 9 1234 5678</span>
+                        </a>
+                        <a href="https://wa.me/56912345678?text=Hola%20PhotoFau,%20quiero%20reservar%20una%20sesion."
+                            class="contact-method" target="_blank" rel="noopener">
+                            <span class="method-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M20 11.5a8.5 8.5 0 1 1-3.1-6.6A8.5 8.5 0 0 1 20 11.5z" />
+                                    <path d="M8 19l.7-2.5a7 7 0 0 1-1.2-3.7 6.8 6.8 0 0 1 12-4.5" />
+                                    <path
+                                        d="M16.6 13.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.2-2-.2-1.3-.5-2.2-1.6-2.8-2.3s-1-1.7-1.1-2.5c0-.6.3-1.2.7-1.4l.5-.2" />
+                                </svg>
+                            </span>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://instagram.com/photofau" class="contact-method" target="_blank" rel="noopener">
+                            <span class="method-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17" cy="7" r="1" />
+                                </svg>
+                            </span>
+                            <span>@photofau</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Que te interesa?</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Selecciona una opcion</option>
+                                <option value="wedding">Fotografia de Bodas</option>
+                                <option value="portrait">Sesion de Retratos</option>
+                                <option value="event">Cobertura de Evento</option>
+                                <option value="course">Cursos de Fotografia</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Cuentame sobre tu proyecto..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">PhotoFau</a>
+                    <p>Capturando momentos eternos desde 2012.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/photofau" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17" cy="7" r="1" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="3" y="7" width="18" height="10" rx="3" />
+                                <path d="M10 9.5l5 2.5-5 2.5z" />
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com" aria-label="TikTok" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M14 4v8.5a3.5 3.5 0 1 1-3-3.45V4h3z" />
+                                <path d="M14 4a5 5 0 0 0 5 5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Inicio</a>
+                    <a href="#portfolio">Portafolio</a>
+                    <a href="#courses">Cursos</a>
+                    <a href="#about">Sobre Mi</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> PhotoFau. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Cerrar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <button class="lightbox-nav prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button class="lightbox-nav next" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-info">
+                <span class="lightbox-category"></span>
+                <h3 class="lightbox-title"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
