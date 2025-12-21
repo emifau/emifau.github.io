@@ -61,6 +61,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -72,6 +73,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 /* Scrollbar */
@@ -111,8 +113,10 @@ ul {
 /* ==================== Container ==================== */
 .container {
     max-width: var(--container-max);
+    width: 100%;
     margin: 0 auto;
     padding: 0 var(--container-padding);
+    overflow-x: hidden;
 }
 
 /* ==================== Section Styles ==================== */
@@ -606,13 +610,14 @@ ul {
     }
 
     .hero-thumbs {
-        bottom: 1.5rem;
+        bottom: 4.5rem;
         left: 50%;
         right: auto;
         transform: translateX(-50%);
-        max-width: 90vw;
+        max-width: 85vw;
         justify-content: center;
         gap: 0.5rem;
+        overflow-x: auto;
     }
 
     .thumb {
@@ -627,8 +632,9 @@ ul {
 
     .hero-scroll {
         display: flex;
-        bottom: 1.5rem;
-        font-size: 0.65rem;
+        bottom: 1rem;
+        font-size: 0.6rem;
+        gap: 0.3rem;
     }
 
     .image-caption {
@@ -2348,5 +2354,25 @@ ul {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== Mobile Overflow Protection ===== */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+    }
+
+    section {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
