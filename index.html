@@ -1,545 +1,514 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="PhotoFau - Fotografia profesional y cursos de fotografia. Capturo momentos autenticos y creo imagenes que venden.">
-    <meta property="og:title" content="PhotoFau | Fotografia Profesional">
-    <meta property="og:description"
-        content="Fotografia de bodas, retratos y marcas. Reserva tu fecha y recibe direccion creativa completa.">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop">
-    <title>PhotoFau | Fotografia Profesional</title>
+        content="Cabañas Bosque Neltume - Descubre la magia del sur de Chile. Cabañas de lujo rodeadas de bosque nativo con vista al volcán Mocho-Choshuenco.">
+    <meta name="keywords"
+        content="cabañas neltume, alojamiento sur chile, cabañas bosque, eco lodge chile, turismo neltume">
+    <title>Cabañas Bosque Neltume | Desconexión en la Naturaleza</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation - Minimal & Transparent -->
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">PhotoFau</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Inicio</a></li>
-                <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
-                <li><a href="#courses" class="nav-link">Cursos</a></li>
-                <li><a href="#about" class="nav-link">Sobre Mi</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            <a href="#" class="logo">
+                <span class="logo-icon">🌲</span>
+                <span class="logo-text">Bosque Neltume</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#cabanas">Cabañas</a></li>
+                <li><a href="#experiencias">Experiencias</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-cta">Reservar</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú">
+                <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero - Photo Grid Focus -->
-    <section id="home" class="hero-portfolio">
-        <!-- Main Featured Photo -->
-        <div class="hero-main">
-            <div class="hero-image active" data-index="0">
-                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop"
-                    alt="Fotografia de bodas" loading="eager" decoding="async" fetchpriority="high">
-                <div class="image-caption">
-                    <span class="caption-category">Bodas</span>
-                    <h2 class="caption-title">Amor Eterno</h2>
-                </div>
-            </div>
-            <div class="hero-image" data-index="1">
-                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1920&h=1080&fit=crop"
-                    alt="Retrato artistico">
-                <div class="image-caption">
-                    <span class="caption-category">Retratos</span>
-                    <h2 class="caption-title">Luz Interior</h2>
-                </div>
-            </div>
-            <div class="hero-image" data-index="2">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop"
-                    alt="Paisaje natural">
-                <div class="image-caption">
-                    <span class="caption-category">Naturaleza</span>
-                    <h2 class="caption-title">Amanecer Alpino</h2>
-                </div>
-            </div>
-            <div class="hero-image" data-index="3">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&h=1080&fit=crop"
-                    alt="Evento">
-                <div class="image-caption">
-                    <span class="caption-category">Eventos</span>
-                    <h2 class="caption-title">Momentos Unicos</h2>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Vista panorámica de las cabañas" class="hero-image">
+            <div class="hero-overlay"></div>
         </div>
-
-        <!-- Thumbnail Navigation -->
-        <div class="hero-thumbs">
-            <button class="thumb active" data-index="0">
-                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=200&h=150&fit=crop"
-                    alt="Bodas">
-                <span class="thumb-label">Bodas</span>
-            </button>
-            <button class="thumb" data-index="1">
-                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=150&fit=crop"
-                    alt="Retratos">
-                <span class="thumb-label">Retratos</span>
-            </button>
-            <button class="thumb" data-index="2">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=150&fit=crop"
-                    alt="Naturaleza">
-                <span class="thumb-label">Naturaleza</span>
-            </button>
-            <button class="thumb" data-index="3">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=200&h=150&fit=crop"
-                    alt="Eventos">
-                <span class="thumb-label">Eventos</span>
-            </button>
-        </div>
-
-        <!-- Brand Overlay - Full Width -->
-        <div class="hero-brand hero-brand--visible">
-            <h1 class="brand-name">PhotoFau</h1>
-            <p class="brand-tagline">Fotografía Profesional</p>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="hero-scroll">
-            <span>Ver mas trabajos</span>
-            <div class="scroll-arrow">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 5v14M5 12l7 7 7-7" />
-                </svg>
+        <div class="hero-content">
+            <span class="hero-badge reveal">Bienvenidos al Sur de Chile</span>
+            <h1 class="hero-title reveal">
+                <span>Desconéctate</span>
+                <span class="highlight">en la Naturaleza</span>
+            </h1>
+            <p class="hero-subtitle reveal">Vive una experiencia única en nuestras cabañas de montaña, rodeadas de
+                bosque nativo y con vista al majestuoso volcán Mocho-Choshuenco.</p>
+            <div class="hero-buttons reveal">
+                <a href="#cabanas" class="btn btn-primary">Explorar Cabañas</a>
+                <a href="#contacto" class="btn btn-secondary">Reservar Ahora</a>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section - Compact -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
-                        alt="Faustino">
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Años de experiencia</span>
                 </div>
-                <div class="about-text">
-                    <span class="section-tag">Sobre Mí</span>
-                    <h2 class="section-title">Faustino Reyes</h2>
-                    <p class="about-intro">Fotógrafo profesional con más de 12 años capturando momentos únicos.</p>
-                    <p>Mi pasión es congelar instantes en el tiempo y enseñar a otros el arte de ver el mundo a través
-                        de un lente. He documentado más de 500 proyectos y formado a más de 1,200 estudiantes.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-value">12+</span>
-                            <span class="stat-label">Años</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">500+</span>
-                            <span class="stat-label">Proyectos</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">1.2K</span>
-                            <span class="stat-label">Estudiantes</span>
-                        </div>
-                    </div>
-                    <div class="about-cta">
-                        <a href="#contact" class="btn btn-primary">Reservar Sesión</a>
-                        <a href="#portfolio" class="btn btn-ghost btn-ghost--dark">Ver Trabajos</a>
-                    </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">Cabañas exclusivas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2500">0</span>
+                    <span class="stat-label">Huéspedes felices</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Sobre Nosotros -->
+    <section class="about" id="nosotros">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Servicios</span>
-                <h2 class="section-title">Experiencias fotograficas hechas a medida</h2>
-                <p class="section-desc">Paquetes claros, tiempos definidos y resultados con impacto comercial.</p>
-            </div>
-            <div class="services-grid">
-                <article class="service-card">
-                    <h3>Fotografia de bodas</h3>
-                    <p>Historia completa del dia, enfoque editorial y emociones autenticas.</p>
-                    <ul>
-                        <li>Preboda opcional</li>
-                        <li>Edicion premium</li>
-                        <li>Entrega digital y album</li>
+            <div class="about-grid">
+                <div class="about-images reveal">
+                    <div class="about-image-main">
+                        <img src="assets/cabin-exterior.png" alt="Cabaña exterior">
+                    </div>
+                    <div class="about-image-secondary">
+                        <img src="assets/cabin-interior.png" alt="Interior acogedor">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">Años</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-badge">Nuestra Historia</span>
+                    <h2 class="section-title">Un refugio familiar en el corazón del bosque</h2>
+                    <p class="about-text">
+                        En 2009, la familia Huenulaf decidió compartir con el mundo la magia del bosque nativo de
+                        Neltume. Lo que comenzó como un pequeño proyecto familiar, hoy se ha convertido en un reconocido
+                        destino de ecoturismo en la Región de Los Ríos.
+                    </p>
+                    <p class="about-text">
+                        Cada una de nuestras cabañas ha sido diseñada con respeto por la naturaleza, utilizando
+                        materiales locales y técnicas de construcción sustentables. Aquí, la desconexión digital se
+                        convierte en reconexión con lo esencial.
+                    </p>
+                    <ul class="about-features">
+                        <li>
+                            <span class="feature-icon">🌿</span>
+                            <span>100% Sustentable</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🏔️</span>
+                            <span>Vista al Volcán</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🔥</span>
+                            <span>Calefacción a Leña</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🍳</span>
+                            <span>Desayuno Incluido</span>
+                        </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cabañas -->
+    <section class="cabins" id="cabanas">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Alojamiento</span>
+                <h2 class="section-title">Nuestras Cabañas</h2>
+                <p class="section-subtitle">Cada cabaña es única, diseñada para ofrecerte comodidad y una experiencia
+                    inolvidable en contacto con la naturaleza.</p>
+            </div>
+            <div class="cabins-grid">
+                <!-- Cabaña 1 -->
+                <article class="cabin-card reveal">
+                    <div class="cabin-image">
+                        <img src="assets/cabin-exterior.png" alt="Cabaña Coihue">
+                        <div class="cabin-badge">Popular</div>
+                    </div>
+                    <div class="cabin-content">
+                        <h3 class="cabin-name">Cabaña Coihue</h3>
+                        <p class="cabin-capacity">
+                            <span class="icon">👥</span> 2-4 personas
+                        </p>
+                        <ul class="cabin-amenities">
+                            <li>Vista al volcán</li>
+                            <li>Jacuzzi exterior</li>
+                            <li>Chimenea</li>
+                            <li>Terraza privada</li>
+                        </ul>
+                        <div class="cabin-footer">
+                            <div class="cabin-price">
+                                <span class="price-amount">$85.000</span>
+                                <span class="price-period">/noche</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-small">Reservar</a>
+                        </div>
+                    </div>
                 </article>
-                <article class="service-card featured">
-                    <h3>Retratos para marcas personales</h3>
-                    <p>Sesiones guiadas para crear imagenes que posicionan y generan confianza.</p>
-                    <ul>
-                        <li>Asesoria de estilo</li>
-                        <li>Direccion de poses</li>
-                        <li>Entrega en 72 horas</li>
+                <!-- Cabaña 2 -->
+                <article class="cabin-card reveal">
+                    <div class="cabin-image">
+                        <img src="assets/cabin-interior.png" alt="Cabaña Araucaria">
+                        <div class="cabin-badge premium">Premium</div>
+                    </div>
+                    <div class="cabin-content">
+                        <h3 class="cabin-name">Cabaña Araucaria</h3>
+                        <p class="cabin-capacity">
+                            <span class="icon">👥</span> 4-6 personas
+                        </p>
+                        <ul class="cabin-amenities">
+                            <li>Vista panorámica</li>
+                            <li>Hot tub</li>
+                            <li>2 habitaciones</li>
+                            <li>Cocina equipada</li>
+                        </ul>
+                        <div class="cabin-footer">
+                            <div class="cabin-price">
+                                <span class="price-amount">$120.000</span>
+                                <span class="price-period">/noche</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-small">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Cabaña 3 -->
+                <article class="cabin-card reveal">
+                    <div class="cabin-image">
+                        <img src="assets/hero.png" alt="Cabaña Ulmo">
+                    </div>
+                    <div class="cabin-content">
+                        <h3 class="cabin-name">Cabaña Ulmo</h3>
+                        <p class="cabin-capacity">
+                            <span class="icon">👥</span> 6-8 personas
+                        </p>
+                        <ul class="cabin-amenities">
+                            <li>Frente al lago</li>
+                            <li>Sauna finlandés</li>
+                            <li>3 habitaciones</li>
+                            <li>Quincho privado</li>
+                        </ul>
+                        <div class="cabin-footer">
+                            <div class="cabin-price">
+                                <span class="price-amount">$180.000</span>
+                                <span class="price-period">/noche</span>
+                            </div>
+                            <a href="#contacto" class="btn btn-small">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencias -->
+    <section class="experiences" id="experiencias">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Aventura</span>
+                <h2 class="section-title">Experiencias Únicas</h2>
+                <p class="section-subtitle">Descubre las maravillas naturales de Neltume y vive aventuras que recordarás
+                    para siempre.</p>
+            </div>
+            <div class="experiences-grid">
+                <article class="experience-card reveal">
+                    <div class="experience-image">
+                        <img src="assets/kayak.png" alt="Kayak en el lago">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-icon">🛶</div>
+                        <h3>Kayak & Navegación</h3>
+                        <p>Navega por las cristalinas aguas del lago Pirihueico y descubre cascadas ocultas.</p>
+                        <span class="experience-duration">3-4 horas</span>
+                    </div>
+                </article>
+                <article class="experience-card reveal">
+                    <div class="experience-image">
+                        <img src="assets/trekking.png" alt="Senderismo en el bosque">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-icon">🥾</div>
+                        <h3>Trekking Bosque Nativo</h3>
+                        <p>Explora senderos milenarios rodeados de coihues, ulmos y araucarias centenarias.</p>
+                        <span class="experience-duration">2-6 horas</span>
+                    </div>
+                </article>
+                <article class="experience-card reveal">
+                    <div class="experience-image">
+                        <img src="assets/termas.png" alt="Termas naturales">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-icon">♨️</div>
+                        <h3>Termas Geométricas</h3>
+                        <p>Relájate en piscinas termales naturales rodeadas de vegetación nativa.</p>
+                        <span class="experience-duration">Medio día</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Momentos</span>
+                <h2 class="section-title">Galería de Imágenes</h2>
+                <p class="section-subtitle">Capturas de momentos mágicos en nuestro refugio de montaña.</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" data-src="assets/hero.png">
+                    <img src="assets/hero.png" alt="Vista panorámica">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/cabin-exterior.png">
+                    <img src="assets/cabin-exterior.png" alt="Cabaña exterior">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/cabin-interior.png">
+                    <img src="assets/cabin-interior.png" alt="Interior acogedor">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/kayak.png">
+                    <img src="assets/kayak.png" alt="Kayak">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/trekking.png">
+                    <img src="assets/trekking.png" alt="Trekking">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/termas.png">
+                    <img src="assets/termas.png" alt="Termas">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-prev" aria-label="Anterior">&#10094;</button>
+        <button class="lightbox-next" aria-label="Siguiente">&#10095;</button>
+        <img src="" alt="" class="lightbox-image" id="lightbox-image">
+    </div>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Reseñas</span>
+                <h2 class="section-title">Lo que dicen nuestros huéspedes</h2>
+            </div>
+            <div class="testimonials-slider reveal">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Una experiencia mágica. Despertar con la vista al volcán y el
+                            sonido del bosque es algo que no olvidaremos jamás. Las cabañas son hermosas y muy bien
+                            equipadas."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MG</div>
+                            <div class="author-info">
+                                <strong>María González</strong>
+                                <span>Santiago, Chile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"El lugar perfecto para desconectarse. La atención de la familia
+                            Huenulaf es increíble, nos hicieron sentir como en casa. Volveremos sin duda."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CR</div>
+                            <div class="author-info">
+                                <strong>Carlos Rodríguez</strong>
+                                <span>Valdivia, Chile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Las termas y el kayak fueron experiencias increíbles. El desayuno
+                            con productos locales es espectacular. Recomendado 100%."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LP</div>
+                            <div class="author-info">
+                                <strong>Laura Pizarro</strong>
+                                <span>Concepción, Chile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Viajamos con niños y fue perfecto. El contacto con la naturaleza,
+                            los senderos seguros y la calidez del lugar. Una joya escondida en el sur."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">FA</div>
+                            <div class="author-info">
+                                <strong>Felipe Araya</strong>
+                                <span>Temuco, Chile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="nav-dot active" data-index="0"></button>
+                    <button class="nav-dot" data-index="1"></button>
+                    <button class="nav-dot" data-index="2"></button>
+                    <button class="nav-dot" data-index="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="location" id="ubicacion">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-content reveal">
+                    <span class="section-badge">Ubicación</span>
+                    <h2 class="section-title">Cómo Llegar</h2>
+                    <p>Estamos ubicados en Neltume, a orillas del lago Pirihueico, en la Región de Los Ríos. Un destino
+                        privilegiado rodeado de bosque nativo y volcanes.</p>
+                    <ul class="location-details">
+                        <li>
+                            <span class="location-icon">📍</span>
+                            <span>Camino a Pirihueico Km 12, Neltume, Región de Los Ríos</span>
+                        </li>
+                        <li>
+                            <span class="location-icon">🚗</span>
+                            <span>A 2 horas de Valdivia / 1 hora de Panguipulli</span>
+                        </li>
+                        <li>
+                            <span class="location-icon">✈️</span>
+                            <span>Aeropuerto más cercano: Pichoy (ZAL) - Valdivia</span>
+                        </li>
                     </ul>
-                </article>
-                <article class="service-card">
-                    <h3>Eventos y empresas</h3>
-                    <p>Cobertura dinamica con enfoque en experiencia, producto y publico.</p>
-                    <ul>
-                        <li>Plan de tomas previo</li>
-                        <li>Backup en sitio</li>
-                        <li>Galeria privada</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Gallery -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <h2 class="section-title">Portafolio</h2>
-                    <p class="section-desc">Seleccion de trabajos reales y entregas finales a clientes.</p>
                 </div>
-                <div class="portfolio-filters">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="wedding">Bodas</button>
-                    <button class="filter-btn" data-filter="portrait">Retratos</button>
-                    <button class="filter-btn" data-filter="nature">Naturaleza</button>
-                    <button class="filter-btn" data-filter="event">Eventos</button>
-                </div>
-            </div>
-
-            <div class="portfolio-masonry">
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=1000&fit=crop"
-                        alt="Boda elegante" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Bodas</span>
-                        <h3 class="item-title">Amor en la Toscana</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="portrait">
-                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=900&fit=crop"
-                        alt="Retrato artistico" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Retratos</span>
-                        <h3 class="item-title">Luz y Sombra</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="nature">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
-                        alt="Paisaje montanoso" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Naturaleza</span>
-                        <h3 class="item-title">Amanecer Alpino</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="event">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop"
-                        alt="Evento" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Eventos</span>
-                        <h3 class="item-title">Noche de Gala</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop"
-                        alt="Boda romantica" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Bodas</span>
-                        <h3 class="item-title">Votos de Amor</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="portrait">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop"
-                        alt="Retrato editorial" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Retratos</span>
-                        <h3 class="item-title">Editorial Fashion</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="nature">
-                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop"
-                        alt="Naturaleza" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Naturaleza</span>
-                        <h3 class="item-title">Bosque Mistico</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="event">
-                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop"
-                        alt="Conferencia" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Eventos</span>
-                        <h3 class="item-title">Conferencia Tech</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="portrait">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop"
-                        alt="Retrato masculino" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Retratos</span>
-                        <h3 class="item-title">Caracter</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&h=600&fit=crop"
-                        alt="Detalles boda" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Bodas</span>
-                        <h3 class="item-title">Detalles Preciosos</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="nature">
-                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop"
-                        alt="Montanas" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Naturaleza</span>
-                        <h3 class="item-title">Cumbres</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="event">
-                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop"
-                        alt="Fiesta" loading="lazy">
-                    <div class="item-overlay">
-                        <span class="item-category">Eventos</span>
-                        <h3 class="item-title">Celebracion</h3>
-                    </div>
+                <div class="location-map reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48893.84926669671!2d-72.03!3d-39.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614e3d5b1831a1d%3A0x1c3a0c3e2d7d8b8a!2sNeltume%2C%20Los%20R%C3%ADos%2C%20Chile!5e0!3m2!1ses!2scl!4v1702000000000!5m2!1ses!2scl"
+                        width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Aprende Fotografia</span>
-                <h2 class="section-title">Cursos & Talleres</h2>
-                <p class="section-desc">Lleva tus habilidades fotograficas al siguiente nivel</p>
-            </div>
-
-            <div class="courses-grid">
-                <div class="course-card featured">
-                    <div class="course-badge">Mas Popular</div>
-                    <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop"
-                            alt="Masterclass">
-                    </div>
-                    <div class="course-content">
-                        <div class="course-meta">
-                            <span>12 horas</span>
-                            <span>Intermedio</span>
-                        </div>
-                        <h3 class="course-title">Masterclass de Retratos</h3>
-                        <p class="course-desc">Domina la iluminacion, composicion y direccion de modelos.</p>
-                        <div class="course-footer">
-                            <div class="course-price">
-                                <span class="price-current">$149.000</span>
-                                <span class="price-original">$249.000</span>
-                            </div>
-                            <a href="#contact" class="btn btn-small">Inscribirse</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&h=400&fit=crop"
-                            alt="Fundamentos">
-                    </div>
-                    <div class="course-content">
-                        <div class="course-meta">
-                            <span>6 horas</span>
-                            <span>Principiante</span>
-                        </div>
-                        <h3 class="course-title">Fundamentos de Fotografia</h3>
-                        <p class="course-desc">Aprende exposicion, composicion y uso de tu camara.</p>
-                        <div class="course-footer">
-                            <div class="course-price">
-                                <span class="price-current">$79.000</span>
-                            </div>
-                            <a href="#contact" class="btn btn-small">Inscribirse</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=600&h=400&fit=crop"
-                            alt="Lightroom">
-                    </div>
-                    <div class="course-content">
-                        <div class="course-meta">
-                            <span>8 horas</span>
-                            <span>Intermedio</span>
-                        </div>
-                        <h3 class="course-title">Edicion en Lightroom</h3>
-                        <p class="course-desc">Transforma tus fotos con tecnicas de edicion profesional.</p>
-                        <div class="course-footer">
-                            <div class="course-price">
-                                <span class="price-current">$99.000</span>
-                            </div>
-                            <a href="#contact" class="btn btn-small">Inscribirse</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=400&fit=crop"
-                            alt="Bodas">
-                    </div>
-                    <div class="course-content">
-                        <div class="course-meta">
-                            <span>15 horas</span>
-                            <span>Avanzado</span>
-                        </div>
-                        <h3 class="course-title">Fotografia de Bodas Pro</h3>
-                        <p class="course-desc">Inicia tu carrera como fotografo de bodas profesional.</p>
-                        <div class="course-footer">
-                            <div class="course-price">
-                                <span class="price-current">$199.000</span>
-                                <span class="price-original">$299.000</span>
-                            </div>
-                            <a href="#contact" class="btn btn-small">Inscribirse</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Testimonios</span>
-                <h2 class="section-title">Clientes que volvieron y recomendaron</h2>
-                <p class="section-desc">Historias reales que reflejan confianza, resultados y experiencia.</p>
-            </div>
-            <div class="testimonials-grid">
-                <figure class="testimonial-card">
-                    <blockquote>"Nos guio en todo momento y el resultado fue elegante y emocionante."</blockquote>
-                    <figcaption>
-                        <span class="testimonial-name">Camila & Diego</span>
-                        <span class="testimonial-role">Boda en Vina del Mar</span>
-                    </figcaption>
-                </figure>
-                <figure class="testimonial-card featured">
-                    <blockquote>"Las fotos de marca elevaron nuestra percepcion y vendimos mas desde el primer mes."
-                    </blockquote>
-                    <figcaption>
-                        <span class="testimonial-name">Alicia Perez</span>
-                        <span class="testimonial-role">Marca personal</span>
-                    </figcaption>
-                </figure>
-                <figure class="testimonial-card">
-                    <blockquote>"Entrega rapida, comunicacion clara y una mirada artistica impecable."</blockquote>
-                    <figcaption>
-                        <span class="testimonial-name">Carlos Mora</span>
-                        <span class="testimonial-role">Evento corporativo</span>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="testimonials-cta">
-                <a href="#contact" class="btn btn-primary">Agendar llamada de 15 minutos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Contacto</span>
-                    <h2 class="section-title">Trabajemos Juntos</h2>
-                    <p class="contact-desc">Tienes un proyecto en mente o quieres inscribirte en un curso? Escribeme.
-                    </p>
-
+                <div class="contact-info reveal">
+                    <span class="section-badge">Contacto</span>
+                    <h2 class="section-title">Reserva tu Escapada</h2>
+                    <p>¿Listo para vivir una experiencia inolvidable? Contáctanos y te ayudaremos a planificar tu
+                        estadía perfecta.</p>
                     <div class="contact-methods">
-                        <a href="mailto:hola@photofau.com" class="contact-method">
-                            <span class="method-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M4 6h16v12H4z" />
-                                    <path d="M4 6l8 6 8-6" />
-                                </svg>
-                            </span>
-                            <span>hola@photofau.com</span>
-                        </a>
                         <a href="tel:+56912345678" class="contact-method">
-                            <span class="method-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path
-                                        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.9 19.9 0 0 1-8.7-3.1 19.5 19.5 0 0 1-6-6A19.9 19.9 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7 2 2 0 0 1 1.7 2.1z" />
-                                </svg>
-                            </span>
-                            <span>+56 9 1234 5678</span>
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <span>+56 9 1234 5678</span>
+                            </div>
                         </a>
-                        <a href="https://wa.me/56912345678?text=Hola%20PhotoFau,%20quiero%20reservar%20una%20sesion."
-                            class="contact-method" target="_blank" rel="noopener">
-                            <span class="method-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <path d="M20 11.5a8.5 8.5 0 1 1-3.1-6.6A8.5 8.5 0 0 1 20 11.5z" />
-                                    <path d="M8 19l.7-2.5a7 7 0 0 1-1.2-3.7 6.8 6.8 0 0 1 12-4.5" />
-                                    <path
-                                        d="M16.6 13.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.2-2-.2-1.3-.5-2.2-1.6-2.8-2.3s-1-1.7-1.1-2.5c0-.6.3-1.2.7-1.4l.5-.2" />
-                                </svg>
-                            </span>
-                            <span>WhatsApp</span>
+                        <a href="mailto:reservas@bosqueneltume.cl" class="contact-method">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <span>reservas@bosqueneltume.cl</span>
+                            </div>
                         </a>
-                        <a href="https://instagram.com/photofau" class="contact-method" target="_blank" rel="noopener">
-                            <span class="method-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                    <rect x="3" y="3" width="18" height="18" rx="5" />
-                                    <circle cx="12" cy="12" r="4" />
-                                    <circle cx="17" cy="7" r="1" />
-                                </svg>
-                            </span>
-                            <span>@photofau</span>
+                        <a href="https://wa.me/56912345678" class="contact-method whatsapp" target="_blank">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>Respuesta inmediata</span>
+                            </div>
                         </a>
                     </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="TripAdvisor">🦉</a>
+                    </div>
                 </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                            </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Fecha llegada</label>
+                            <input type="date" id="checkin" name="checkin" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Que te interesa?</label>
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected>Selecciona una opcion</option>
-                                <option value="wedding">Fotografia de Bodas</option>
-                                <option value="portrait">Sesion de Retratos</option>
-                                <option value="event">Cobertura de Evento</option>
-                                <option value="course">Cursos de Fotografia</option>
-                                <option value="other">Otro</option>
-                            </select>
+                            <label for="checkout">Fecha salida</label>
+                            <input type="date" id="checkout" name="checkout" required>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Cuentame sobre tu proyecto..."
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Número de huéspedes</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Seleccionar</option>
+                            <option value="2">2 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="8">8+ personas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje (opcional)</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Cuéntanos sobre tu viaje ideal..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Enviar Consulta</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -547,71 +516,47 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#home" class="footer-logo">PhotoFau</a>
-                    <p>Capturando momentos eternos desde 2012.</p>
-                    <div class="footer-social">
-                        <a href="https://instagram.com/photofau" aria-label="Instagram" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <rect x="3" y="3" width="18" height="18" rx="5" />
-                                <circle cx="12" cy="12" r="4" />
-                                <circle cx="17" cy="7" r="1" />
-                            </svg>
-                        </a>
-                        <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <rect x="3" y="7" width="18" height="10" rx="3" />
-                                <path d="M10 9.5l5 2.5-5 2.5z" />
-                            </svg>
-                        </a>
-                        <a href="https://tiktok.com" aria-label="TikTok" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <path d="M14 4v8.5a3.5 3.5 0 1 1-3-3.45V4h3z" />
-                                <path d="M14 4a5 5 0 0 0 5 5" />
-                            </svg>
-                        </a>
-                    </div>
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🌲</span>
+                        <span class="logo-text">Bosque Neltume</span>
+                    </a>
+                    <p>Tu refugio de montaña en el corazón del sur de Chile. Reconectando a las personas con la
+                        naturaleza desde 2009.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#home">Inicio</a>
-                    <a href="#portfolio">Portafolio</a>
-                    <a href="#courses">Cursos</a>
-                    <a href="#about">Sobre Mi</a>
-                    <a href="#contact">Contacto</a>
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#cabanas">Cabañas</a></li>
+                        <li><a href="#experiencias">Experiencias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Neltume, Región de Los Ríos</li>
+                        <li>📞 +56 9 1234 5678</li>
+                        <li>✉️ reservas@bosqueneltume.cl</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recibe ofertas exclusivas y novedades.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="tu@email.com" required>
+                        <button type="submit">→</button>
+                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> PhotoFau. Todos los derechos reservados.</p>
+                <p>&copy; <span id="year"></span> Cabañas Bosque Neltume. Todos los derechos reservados.</p>
+                <p class="footer-credits">Diseñado con 💚 en el sur de Chile</p>
             </div>
         </div>
     </footer>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" aria-label="Cerrar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 6L6 18M6 6l12 12" />
-            </svg>
-        </button>
-        <button class="lightbox-nav prev" aria-label="Anterior">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-            </svg>
-        </button>
-        <button class="lightbox-nav next" aria-label="Siguiente">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-        </button>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightbox-img">
-            <div class="lightbox-info">
-                <span class="lightbox-category"></span>
-                <h3 class="lightbox-title"></h3>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
